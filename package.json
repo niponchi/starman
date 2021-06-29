@@ -12,7 +12,8 @@
     "clean": "tsc --build --clean",
     "test": "tsc && STARMAN_RESULT_DIR=./test node test/basic.test.js && node test/reusing.test.js",
     "prepublish": "yarn test && yarn build",
-    "release": "npm publish --access=public"
+    "release": "npm publish --access=public",
+    "postinstall": "npm run build"
   },
   "author": "Rungsikorn.R",
   "license": "MIT",
